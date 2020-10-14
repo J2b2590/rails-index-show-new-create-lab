@@ -1,0 +1,9 @@
+<h1>INDEX PG</h1>
+
+
+<% @coupons.map do |coupon| %>
+    
+   <p> <%= link_to "#{coupon.coupon_code} #{coupon.store}", coupon_path(coupon) %> </p>
+   
+    
+<%end%>
